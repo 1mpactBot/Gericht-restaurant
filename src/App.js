@@ -8,9 +8,9 @@ import './App.css';
 const App = () => {
   const [loading,setLoading] = useState(true);
 
-  useEffect(() => {
+  window.addEventListener("load", () => {
     setLoading(false);
-  },[]);
+  });
   
   if(loading){
     return <Loader />;
